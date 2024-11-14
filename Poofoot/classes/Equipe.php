@@ -10,7 +10,7 @@ Class Equipe {
         $this->nom = $nom;
         $this->nomPays = $nomPays;
         $this->anneeCreation = $anneeCreation;
-        $pays->addEquipe($this);
+        $nomPays->addEquipe($this);
         $this->carrieres = [];
     }
 
@@ -44,6 +44,14 @@ Class Equipe {
 
     public function addCarriere(Carriere $carriere){
         $this->carrieres[] = $carriere;
+    }
+
+    public function afficherMembres() {
+        $result = "Les joueurs de ".$this."(".$this->anneeCreation.") sont: <br>";
+        foreach($this->carrieres as $carriere) {
+            $result .= $carriere->getJoueur()."(".$carriere->getAge().")<br>";
+        }
+        return $result;
     }
 
     public function __toString() {

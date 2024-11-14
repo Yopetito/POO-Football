@@ -12,7 +12,7 @@ private array $carrieres;
         $this->prenom = $prenom;
         $this->dateDeNaissance = new DateTime($dateDeNaissance);
         $this->nomPays = $nomPays;
-        $pays->addJoueurs($this);
+        $nomPays->addJoueurs($this);
         $this->carrieres = [];
     }
 

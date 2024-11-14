@@ -48,4 +48,11 @@ class carriere {
 
         return $this;
     }
+
+    public function getAge(){
+        $today = new DateTime(); //date d'aujourd'hui
+        $age = $today->diff($this->joueur->getDateDeNaissance()); //calculer la difference grace au DateTime
+        return $age->y; //return l'age en 'y' years. (années)
+    }
+
 }
