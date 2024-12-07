@@ -8,9 +8,9 @@
 ## 📝 Consignes
 Creation des classes Equipe, Joueur, Pays, Carriere.
 Être capable de: 
-  ✅ lister toutes les équipes d'un pays 
-  ✅ lister tous les joueurs d'une équipe
-  ✅ lister toutes les équipes d'un joueur 
+- ✅ lister toutes les équipes d'un pays 
+- ✅ lister tous les joueurs d'une équipe
+- ✅ lister toutes les équipes d'un joueur 
                      
 ## 🔧 Technologies utilisées
 [![My Skills](https://skillicons.dev/icons?i=php)](https://skillicons.dev)
